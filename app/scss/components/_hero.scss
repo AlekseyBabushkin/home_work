@@ -1,0 +1,52 @@
+.hero {
+  background-color: $light-color;
+  padding-top: 40px;
+  padding-bottom: 108px;
+
+  // .hero__content
+  &__content {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+  }
+
+  // .hero__name
+  &__name {
+    flex: 0 1 33.333%;
+    font-weight: 700;
+    font-size: 47.3392px;
+    line-height: 59px;
+  }
+
+  // .hero__info
+  &__info {
+    flex: 0 1 33.333%;
+    margin: 0 auto;
+  }
+
+  // .hero__language
+  &__language {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: auto;
+  }
+  
+  // .hero__lang
+  &__lang {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+
+    &_active {
+      color: $main-color;
+    }
+  }
+
+  // .hero__img 
+  &__img {
+    width: 100%;
+  }
+}

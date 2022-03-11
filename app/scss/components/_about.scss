@@ -1,0 +1,21 @@
+.about {
+  background-color: $bg-color;
+  padding-top: 120px;
+  padding-bottom: 107px;
+
+  // .about__title
+  &__title {
+    margin-bottom: 17px;
+  }
+
+  // .about__descr
+  &__descr {
+    max-width: 485px;
+    text-align: center;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}
