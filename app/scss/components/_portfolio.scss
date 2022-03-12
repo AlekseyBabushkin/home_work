@@ -1,0 +1,38 @@
+.portfolio {
+	background-color: $bg-color;
+	@extend %pad-deck;  
+
+	// .portfolio__title
+	&__title {
+		margin-bottom: 45px;
+	}
+
+	// .portfolio__item
+	&__item {
+
+		&:not(:last-child) {
+			margin-bottom: 100px;
+
+			@media (max-width: (576px)) {
+				margin-bottom: 60px;
+			}
+		}
+	}
+
+	// .portfolio__img
+	&__img {
+		margin-bottom: 45px;
+		object-fit: cover;
+	}
+
+	// .portfolio__link
+	&__link {
+		display: block;
+		text-align: center;
+		text-decoration-line: underline;
+	}
+
+	@media (max-width: (768px)) {
+    padding: 80px 0;
+  }
+}

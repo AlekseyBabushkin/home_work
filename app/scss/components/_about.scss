@@ -1,7 +1,6 @@
 .about {
   background-color: $bg-color;
-  padding-top: 120px;
-  padding-bottom: 107px;
+  @extend %pad-deck;  
 
   // .about__title
   &__title {
@@ -17,5 +16,9 @@
     &:not(:last-child) {
       margin-bottom: 40px;
     }
+  }
+
+  @media (max-width: (768px)) {
+    padding: 80px 0;
   }
 }

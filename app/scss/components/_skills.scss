@@ -1,0 +1,109 @@
+.skills {
+  background-color: $light-color;
+  @extend %pad-deck;
+
+  // .skills__title
+  &__title {
+    margin-bottom: 70px;
+
+    @media (max-width: (768px)) {
+      margin-bottom: 40px;
+    }
+  }
+
+  // .skills__subtitle
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 83px;
+
+    @media (max-width: (768px)) {
+      margin-bottom: 40px;
+    }
+  }
+
+  // .skills__list
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @media (max-width: (768px)) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px;
+    }
+
+    @media (max-width: (576px)) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .skills__item
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 110px;
+    background-size: inherit;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    // .skills__item_ps
+    &_ps {
+      background-image: url(../../images/ps.svg);
+    }
+
+    // .skills__item_ai
+    &_ai {
+      background-image: url(../../images/ai.svg);
+    }
+
+    // .skills__item_ae
+    &_ae {
+      background-image: url(../../images/ae.svg);
+    }
+
+    // .skills__item_figma
+    &_figma {
+      background-image: url(../../images/figma.svg);
+    }
+  }
+
+  // .skills__name
+  &__name {
+    max-width: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grey-color;
+    margin: auto;
+  }
+
+  // .skills__rating {
+  &__rating {
+    margin-top: 40px;
+  }
+
+  @media (max-width: (768px)) {
+    padding: 80px 0;
+  }
+}
+
+
+.rating {
+  display: inline-flex;
+
+  // .rating__star
+  &__star {
+    font-size: 27px;
+    color: #E5E5E5;
+    margin: 0 4px;
+  }
+}
+
+.rating[data-value="1"] .rating__star:nth-child(-n + 1),
+.rating[data-value="2"] .rating__star:nth-child(-n + 2),
+.rating[data-value="3"] .rating__star:nth-child(-n + 3),
+.rating[data-value="4"] .rating__star:nth-child(-n + 4),
+.rating[data-value="5"] .rating__star:nth-child(-n + 5) {
+  color: $main-color;
+}

@@ -2,11 +2,13 @@
 @import 'mixins';
 @import 'fonts';
 @import 'reset';
-@import 'global';
+@import 'settings';
 
 
 @import 'components/header';
 @import 'components/footer';
 @import 'components/hero';
 @import 'components/about';
+@import 'components/skills';
+@import 'components/portfolio';
 
