@@ -1,6 +1,8 @@
-const linksHeader = document.querySelectorAll('.nav__link');
+const smoothScroll = document.querySelectorAll('.nav__link');
+const burger = document.querySelector('.burger')
+const navMenu = document.querySelector('.nav')
 
-linksHeader.forEach((link) => {
+smoothScroll.forEach((link) => {
   link.addEventListener('click', (event) => {
     event.preventDefault()
   
@@ -11,4 +13,14 @@ linksHeader.forEach((link) => {
     block: 'start'
     })
   })
+})
+
+
+const toggleMenu = () => {
+  navMenu.classList.toggle('nav_active')
+  burger.classList.toggle('burger_active')
+}
+
+burger.addEventListener('click', () => {
+  toggleMenu()
 })

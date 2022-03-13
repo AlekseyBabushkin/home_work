@@ -8,6 +8,12 @@
     display: flex;
     align-items: flex-end;
     margin-bottom: 50px;
+    position: relative;
+
+    @media (max-width: (576px)) {
+      display: block;
+      margin-bottom: 0;
+    }
   }
 
   // .hero__name
@@ -16,12 +22,15 @@
     font-weight: 700;
     font-size: 47.3392px;
     line-height: 59px;
-  }
 
+  }
+  
   // .hero__info
   &__info {
     flex: 0 1 33.333%;
     margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 35px;
   }
 
   // .hero__language
@@ -31,6 +40,10 @@
     text-transform: uppercase;
     font-weight: 700;
     margin-left: auto;
+
+    @media (max-width: (576px)) {
+      display: none;
+    }
   }
   
   // .hero__lang
@@ -48,5 +61,9 @@
   // .hero__img 
   &__img {
     width: 100%;
+
+    @media (max-width: (576px)) {
+      min-height: 478px;
+    }
   }
 }
