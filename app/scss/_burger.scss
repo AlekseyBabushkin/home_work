@@ -30,7 +30,25 @@
   }
 
   &_active {
-    display: block;
     z-index: 1000;
+    right: 15px;
+
+    .burger__line {
+      background-color: $grey-color;
+
+      &:first-child {
+        transform: rotate(45deg);
+        margin-top: 0;
+      }
+
+      &:nth-child(2) {
+        display: none;
+      }
+
+      &:last-child {
+        transform: rotate(-45deg);
+        margin-top: 0;
+      }
+    }
   }
 }
