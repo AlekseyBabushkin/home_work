@@ -89,6 +89,7 @@ function cleanDist() {
 function watching() {
   watch(['app/scss/**/*.scss'], styles);  
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
+  watch(['app/images/**/*.*'], images);
   watch(['app/fonts/*.woff2'], fonts);
   watch(['app/**/*.html'], htmlInclude);
   watch(['app/**/*.html']).on('change', browserSync.reload);

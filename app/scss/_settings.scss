@@ -4,8 +4,10 @@ body {
 }
 
 body {
-  font-family: Muller, sans-serif;
-  font-size: 16px;
+  font-family: Gilroy, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
   color: $main-color;
   display: flex;
   flex-direction: column;
@@ -16,9 +18,13 @@ body {
 }
 
 .container {
-  max-width: 1230px;
+  max-width: 970px;
   margin: 0 auto;
   padding: 0 15px;
+
+  @media (max-width: (576px)) {
+    padding: 0 25px;
+  }
 }
 
 .btn-reset {
@@ -43,4 +49,16 @@ body {
   width: 1px;
   height: 1px;
   clip: rect(0 0 0 0);
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 42px;
+  color: $main-color;
+  text-align: center;
+}
+
+.none-scroll {
+  overflow: hidden;
 }
