@@ -33,28 +33,11 @@
     margin-bottom: 35px;
   }
 
-  // .hero__language
-  &__language {
-    writing-mode: vertical-lr;
-    transform: rotate(-180deg);
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-left: auto;
-
+  // .hero__languages 
+  &__languages {
+    
     @media (max-width: (576px)) {
       display: none;
-    }
-  }
-  
-  // .hero__lang
-  &__lang {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #828282;
-
-    &_active {
-      color: $main-color;
     }
   }
 
@@ -65,5 +48,25 @@
     @media (max-width: (576px)) {
       min-height: 478px;
     }
+  }
+}
+
+.languages {
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-left: auto;
+  
+  // .languages__lang
+  &__lang {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+
+    // .languages__lang_active
+    &_active {
+      color: $main-color;    }
   }
 }
